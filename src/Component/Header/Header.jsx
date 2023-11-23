@@ -12,8 +12,8 @@ const Header = () => {
   };
   return (
     <>
-      <div className=" relative m-0 border-box p-4 gradientTwo border-b border-b-[grey]">
-        <div className="flex justify-between items-center ">
+      <div className=" relative m-0 border-box p-6 gradientTwo border-b border-b-[grey]">
+        <div className="flex justify-between items-center mx-6">
           <h2 className="font-clash text-3xl font-bold text-white">
             get<span className="text-textColor">linked</span>
           </h2>
