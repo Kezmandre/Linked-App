@@ -7,13 +7,13 @@ import { MdLocationPin } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="m-0 border-box bg-colorBg">
-      <div className=" flex-col md:flex-row flex gap-6 justify-start md:justify-between md:items-center m-12 py-6">
+      <div className=" flex-col md:flex-row flex gap-6 justify-start md:justify-between md:items-center ml-12 mr-12 py-6">
         <div className="[350px] md:w-[400px]">
           <h2 className="font-clash text-3xl text-white font-bold pb-2">
             get<span className="text-textColor">linked</span>
           </h2>
           <p className="text-white font-montserrat pb-2 text-lg text-justify">
-            Getlinked Tech Hackathon is a technology innovation program <br />{" "}
+            Getlinked Tech Hackathon is a technology innovation program{" "}
             established by a group of organization with the aim of showcasing
             young and talented individual in the field of technology
           </p>

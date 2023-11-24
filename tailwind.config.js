@@ -7,6 +7,7 @@ export default {
         montserrat: "Montserrat",
         clash: "DM Serif Display",
         unica: "Unica One",
+        poppins: 'Poppins',
       },
 
       colors: {

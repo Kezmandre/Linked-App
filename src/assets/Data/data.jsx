@@ -1,18 +1,18 @@
 export const navData = [
     {
     title: "Timeline",
-    path: "/timeline",
+    path: "#timeline",
     name:"nav-text",
 },
 
 {
     title: "Overview",
-    path: "/overview",
+    path: "#overview",
     name:"nav-text",
 },
 {
     title: "FAQs",
-    path: "/faqs",
+    path: "#faqs",
     name:"nav-text",
 },
 {

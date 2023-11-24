@@ -12,8 +12,8 @@ const Header = () => {
   };
   return (
     <>
-      <div className=" relative m-0 border-box p-6 gradientTwo border-b border-b-[grey]">
-        <div className="flex justify-between items-center mx-6">
+      <div className=" sticky top-0 m-0 border-box p-6 gradientTwo border-b z-20 border-b-[grey]">
+        <div className=" flex justify-between items-center mx-6">
           <h2 className="font-clash text-3xl font-bold text-white">
             get<span className="text-textColor">linked</span>
           </h2>
@@ -31,9 +31,11 @@ const Header = () => {
               );
             })}
           </nav>
+          <Link to="/register">
           <button className="hidden w-[150px] shadow p-[6px] rounded-mx text-white btnGradient hover:p-[8px] md:block">
             Register
           </button>
+          </Link>
         </div>
         <div className="absolute top-4 right-4">
           <BiMenuAltRight
@@ -43,7 +45,7 @@ const Header = () => {
         </div>
       </div>
       {toggle ? (
-        <div className="md:hidden fixed w-screen h-screen top-0 right-0 bg-[#150e28] duration-[950ms] z-90">
+        <div className="md:hidden fixed w-screen h-screen top-0 right-0 bg-[#150e28] duration-[950ms] z-20">
           <div className=" absolute top-4 right-4">
             <ImCancelCircle
               onClick={showToggle}
