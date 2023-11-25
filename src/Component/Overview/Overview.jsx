@@ -7,9 +7,9 @@ import Hero from "../../assets/Images/hero.png"
 import Globe from "../../assets/Images/globe.png"
 const Overview = () => {
   return (
-    <div className="m-0 p-0 h-[820px] md:h-[500px] border-box gradientTwo">
-      <div className="w-[95%]  mx-auto">
-        <div className="relative mb-6">
+    <div className="m-0 p-0 h-[830px] md:h-[510px] border-box gradientTwo">
+      <div className="w-[95%] mx-auto">
+        <div className="relative mb-8">
           <p className="font-montserrat text-right text-sm md:text-3xl font-bold text-white pt-2 pr-2">
             Ignite a Revolution in HR Innovation{" "}
             <img
@@ -66,7 +66,7 @@ const Overview = () => {
             </div>
           </div>
 
-          <div className=" w-sm md:basis-2/4 h-full mr-8">
+          <div className=" w-sm md:basis-2/4 h-full mr-8 mb-6">
             <div className=" relative w-full h-full">
             <img src={Hero} alt="" className="w-full h-full" />
             <img src={Globe} alt="" className="absolute top-2 left-6 w-[350px] md:w-[400px]" />

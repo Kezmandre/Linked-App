@@ -32,9 +32,9 @@ const Header = () => {
             })}
           </nav>
           <Link to="/register">
-          <button className="hidden w-[150px] shadow p-[6px] rounded-mx text-white btnGradient hover:p-[8px] md:block">
-            Register
-          </button>
+            <button className="hidden w-[150px] shadow p-[6px] rounded-mx text-white btnGradient hover:p-[8px] md:block">
+              Register
+            </button>
           </Link>
         </div>
         <div className="absolute top-4 right-4">
@@ -59,9 +59,9 @@ const Header = () => {
                   className="text-montserrat p-4 cursor-pointer text-xl hover:text-2xl"
                   key={item.id}
                 >
-                  <Link to={item.path}>
+                  <a href={item.path}>
                     <li>{item.title}</li>
-                  </Link>
+                  </a>
                 </ul>
               );
             })}
