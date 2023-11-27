@@ -55,11 +55,12 @@ const Header = () => {
           <div className="m-10 text-white w-1/2" onClick={showToggle}>
             {navData?.map((item) => {
               return (
+                
                 <ul
                   className="text-montserrat p-4 cursor-pointer text-xl hover:text-2xl"
                   key={item.id}
                 >
-                  <a href={item.path}>
+                  <a onClick={()=>handleClick(item.path)} href={item.path}>
                     <li>{item.title}</li>
                   </a>
                 </ul>

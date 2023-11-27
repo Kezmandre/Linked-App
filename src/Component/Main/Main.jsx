@@ -124,7 +124,7 @@ const Main = () => {
               technologies or APIs, and any other competition-specific
               requirements.
             </p>
-            <div className="w-[150px] mt-6 mx-auto md:mx-0">
+            <div className="w-[150px] mt-6 mb-8 mx-auto md:mx-0">
               <button className="w-full m-4 shadow p-[8px] rounded-mx text-white btnGradient hover:p-[10px] md:block">
                 Read more
               </button>
@@ -138,13 +138,13 @@ const Main = () => {
       <div id="faqs" className="p-0 m-0 bg-colorBg">
         <div className="w-5/6 mx-auto flex flex-col md:flex-row gap-4 justify-center items-center">
           <div className="w-sm md:basis-2/4 mb-6">
-            <h2 className="font-montserrat text-3xl font-bold text-white pb-2">
+            <h2 className="font-montserrat text-3xl text-center md:text-start font-bold text-white pb-2">
               Frequently Ask
             </h2>
-            <h2 className="font-montserrat text-3xl font-bold text-textColor pb-4">
+            <h2 className="font-montserrat text-3xl text-center md:text-start font-bold text-textColor pb-4">
               Question
             </h2>
-            <p className="text-white font-montserrat pb-8">
+            <p className="text-white text-center md:text-start font-montserrat pb-8">
               We got answers to questions that you might want to ask about
               getlinked 1.0
             </p>
@@ -160,7 +160,7 @@ const Main = () => {
                       {item.question}
                     </p>
                     {answer[item.id] ? (
-                      <FaMinus className="text-textColor absolute top-12 right-4 z-20" onClick={()=>(toggleAnswer(item.id))} />
+                      <FaMinus className="text-textColor absolute top-16 right-2 md:top-12 md:right-4 z-20" onClick={()=>(toggleAnswer(item.id))} />
                     ) : (
                       <FaPlus className="text-textColor absolute top- right-0" onClick={()=>(toggleAnswer(item.id))} />
                     )}
