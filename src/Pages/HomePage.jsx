@@ -3,6 +3,8 @@ import Overview from "../Component/Overview/Overview";
 import Main from "../Component/Main/Main";
 import Timeline from "../Component/Timeline/Timeline";
 import Prize from "../Component/Prize/Prize";
+import Sponsors from "../Component/Sponsors/Sponsors";
+import Policy from "../Component/Policy/Policy";
 
 const HomePage = () => {
   return (
@@ -11,6 +13,8 @@ const HomePage = () => {
      <Main/>
      <Timeline/>
      <Prize/>
+     <Sponsors/>
+     <Policy/>
     </div>
   );
 };

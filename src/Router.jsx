@@ -18,23 +18,9 @@ const Router = () => {
           }
         />
 
-<Route
-          path="/contact"
-          element={
-            <Layout>
-              <ContactPage />
-            </Layout>
-          }
-        />
+        <Route path="/contact" element={<ContactPage />} />
 
-<Route
-          path="/register"
-          element={
-            <Layout>
-              <RegisterPage />
-            </Layout>
-          }
-        />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </div>
   );

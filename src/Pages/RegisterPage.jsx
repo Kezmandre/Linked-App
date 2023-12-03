@@ -1,9 +1,13 @@
 import React from 'react'
 import Register from '../Component/Register/Register'
+import Header from '../Component/Header/Header'
 
 const RegisterPage = () => {
   return (
-    <div><Register/></div>
+    <div>
+      <Header/>
+      <Register/>
+      </div>
   )
 }
 

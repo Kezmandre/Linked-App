@@ -12,12 +12,12 @@ const Header = () => {
   };
   return (
     <>
-      <div className=" sticky top-0 m-0 border-box p-6 gradientTwo border-b z-20 border-b-[grey]">
+      <div className=" sticky top-0 m-0 border-box p-6 bg-colorBg border-b z-20 border-b-purple-900">
         <div className=" flex justify-between items-center mx-6">
           <h2 className="font-clash text-3xl font-bold text-white">
             get<span className="text-textColor">linked</span>
           </h2>
-          <nav className=" hidden md:flex justify-center items-center gap-5 text-white">
+          <nav className=" hidden md:flex justify-center  items-center gap-5 text-white">
             {navData?.map((item) => {
               return (
                 <ul
@@ -25,7 +25,7 @@ const Header = () => {
                   key={item.id}
                 >
                   <Link to={item.path}>
-                    <li>{item.title}</li>
+                    <li className="hover:hover">{item.title}</li>
                   </Link>
                 </ul>
               );

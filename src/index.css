@@ -1,14 +1,16 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,500;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,500;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,500;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth;
+}
 @layer components {
   .gradientOne {
     background: linear-gradient(135deg, #d434fe 0%, #150e28 100%);
@@ -41,5 +43,41 @@
       #ff26b9 99.99%,
       #fe34b9 100%
     );
+  }
+
+  .prize1 {
+    border-radius: 8px;
+    border: 1px solid #d434fe;
+    background: rgba(212, 52, 254, 0.12);
+  }
+
+  .prize2 {
+    border-radius: 8px;
+    border: 1px solid #903aff;
+    background: rgba(144, 58, 255, 0.12);
+  }
+
+  .sponsor {
+    border-radius: 5px;
+    border: 1px solid #d434fe;
+    background: rgba(255, 255, 255, 0.01);
+  }
+
+  .hover {
+    background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .privacy {
+    border-radius: 5px;
+    border: 1px solid #d434fe;
+    background: rgba(217, 217, 217, 0.03);
+  }
+
+  .contact {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }

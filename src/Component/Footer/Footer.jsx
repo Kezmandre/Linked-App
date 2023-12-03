@@ -6,7 +6,7 @@ import { MdLocationPin } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="m-0 border-box bg-colorBg">
+    <footer className="m-0 pt-12 border-box bg-colorBg">
       <div className=" flex-col md:flex-row flex gap-6 justify-start md:justify-between md:items-center ml-12 mr-12 py-6">
         <div className="[350px] md:w-[400px]">
           <h2 className="font-clash text-3xl text-white font-bold pb-2">
