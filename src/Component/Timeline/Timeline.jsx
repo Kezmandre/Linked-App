@@ -2,7 +2,7 @@ import React from "react";
 
 const Timeline = () => {
   return (
-    <div className=" p-0 m-0 bg-colorBg">
+    <div id="timeline" className=" p-0 m-0 bg-colorBg">
       <div className="w-5/6 mx-auto">
         <h2 className="font-montserrat font-semibold text-2xl text-white text-center pt-12 pb-4">
           Timeline

@@ -5,22 +5,34 @@ import Bulb from "../../assets/Images/bulb.png";
 import Bang from "../../assets/Images/bang.png";
 import Hero from "../../assets/Images/hero.png"
 import Globe from "../../assets/Images/globe.png"
+import {motion} from "framer-motion"
 const Overview = () => {
   return (
     <div className="m-0 p-0 h-[830px] md:h-[510px] border-box gradientTwo">
       <div className="w-[95%] mx-auto">
-        <div className="relative mb-8">
+        <motion.div className="relative mb-8"
+          initial={{x:"-100vw"}}
+          animate={{x:0}}
+          transition={{delay:1.5, duration:1.5}}
+        >
           <p className="font-montserrat text-right text-sm md:text-3xl font-bold text-white pt-2 pr-2">
             Ignite a Revolution in HR Innovation{" "}
+              
             <img
               src={Vector}
               alt=""
               className="absolute top-10 right-2 w-[220px]"
             />
+           
           </p>
-        </div>
+        </motion.div>
         <div className=" flex flex-col md:flex-row justify-between items-center h-[80vh] md:h-[70vh]">
-          <div className="w-sm md:basis-2/4 h-full">
+          <motion.div className="w-sm md:basis-2/4 h-full"
+          initial={{x:"-100vw"}}
+          animate={{x:0}}
+          transition={{delay:1, type:"spring",duration:1}}
+          
+          >
             <div className=" mr-6 ml-4 mt-8 mb-4">
               <h1 className="text-center md:text-left text-4xl lg:text-6xl font-montserrat font-bold text-white">
                 getlinked{" "}
@@ -64,12 +76,19 @@ const Overview = () => {
                 00<sub className="text-sm">S</sub>
               </span>
             </div>
-          </div>
+          </motion.div>
 
           <div className=" w-sm md:basis-2/4 h-full mr-8 mb-6">
             <div className=" relative w-full h-full">
             <img src={Hero} alt="" className="w-full h-full" />
+            <motion.div
+            
+            animate={{rotate:360}}
+            transition={{duration:10, repeat:Infinity, ease:"linear"}}
+            style={{originX:0.5, originY:0.5, width:400, height:400, left:8, top:"10px", position:"absolute"}}
+            >
             <img src={Globe} alt="" className="absolute top-2 left-6 w-[350px] md:w-[400px]" />
+            </motion.div>
             </div>
           </div>
         </div>
