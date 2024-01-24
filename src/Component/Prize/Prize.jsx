@@ -17,7 +17,7 @@ const Prize = () => {
           Highlight of the prizes or reward for winners and for Participants
         </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+        <div className="flex  flex-wrap flex-row gap-8 justify-center items-center">
           <div className="w-sm md:basis-2/4">
             <div className="w-5/6 mx-auto">
               <img src={Trophy} alt="" className="w-full" />
@@ -32,7 +32,7 @@ const Prize = () => {
                 <p className="text-white text-center text-xl font-medium">
                   runner
                 </p>
-                <p className="text-center text-2xl text-textColor font-semibold">
+                <p className="text-center truncate text-xl text-textColor font-semibold">
                   N300,000
                 </p>
               </div>
@@ -48,7 +48,7 @@ const Prize = () => {
                 <p className="text-white text-center text-xl font-medium">
                   runner
                 </p>
-                <p className="text-center text-2xl text-textColor font-semibold">
+                <p className="text-center truncate text-xl text-textColor font-semibold">
                   N400,000
                 </p>
               </div>
@@ -64,7 +64,7 @@ const Prize = () => {
                 <p className="text-white text-center text-xl font-medium">
                   runner
                 </p>
-                <p className="text-center text-2xl text-textColor font-semibold">
+                <p className="text-center truncate text-xl text-textColor font-semibold">
                   N150,000
                 </p>
               </div>

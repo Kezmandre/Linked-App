@@ -58,7 +58,7 @@ const Header = () => {
             {navData?.map((item) => {
               return (
                 <ul
-                  className="text-montserrat p-4 cursor-pointer text-xl hover:text-2xl"
+                  className="font-montserrat p-4 cursor-pointer text-xl hover:text-2xl"
                   key={item.id}
                 >
                   <a onClick={() => handleClick(item.path)} href={item.path}>

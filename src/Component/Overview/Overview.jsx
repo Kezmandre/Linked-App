@@ -8,7 +8,7 @@ import Globe from "../../assets/Images/globe.png"
 import {motion} from "framer-motion"
 const Overview = () => {
   return (
-    <div className="m-0 p-0 h-[830px] md:h-[510px] border-box gradientTwo">
+    <div className="m-0 w-[100%] p-0 h-[830px] md:h-[510px] border-box gradientTwo">
       <div className="w-[95%] mx-auto">
         <motion.div className="relative mb-8"
           initial={{x:"-100vw"}}
@@ -78,16 +78,16 @@ const Overview = () => {
             </div>
           </motion.div>
 
-          <div className=" w-sm md:basis-2/4 h-full mr-8 mb-6">
+          <div className=" w-[300px] md:basis-2/4 h-full mr-8 mb-6">
             <div className=" relative w-full h-full">
             <img src={Hero} alt="" className="w-full h-full" />
             <motion.div
             
             animate={{rotate:360}}
             transition={{duration:10, repeat:Infinity, ease:"linear"}}
-            style={{originX:0.5, originY:0.5, width:400, height:400, left:8, top:"10px", position:"absolute"}}
+            style={{originX:0.5, originY:0.5, width:300, height:300, left:8, top:"10px", position:"absolute"}}
             >
-            <img src={Globe} alt="" className="absolute top-2 left-6 w-[350px] md:w-[400px]" />
+            <img src={Globe} alt="" className="absolute top-[-2px] left-10 w-[200px] lg:w-[400px]" />
             </motion.div>
             </div>
           </div>
