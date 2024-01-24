@@ -61,16 +61,18 @@ const Header = () => {
                   className="font-montserrat p-4 cursor-pointer text-xl hover:text-2xl"
                   key={item.id}
                 >
-                  <a onClick={() => handleClick(item.path)} href={item.path}>
+                  <a href={item.path}>
                     <li>{item.title}</li>
                   </a>
                 </ul>
               );
             })}
           </div>
+          <Link to="/register">
           <button className="w-[150px] m-10 shadow p-[6px]  rounded-mx text-white btnGradient hover:hover hover:border-2 hover:border-textColor hover:p-[8px] md:block">
             Register
           </button>
+          </Link>
         </div>
       ) : (
         <div className="duration-[350ms] right-[-100%]">{""}</div>
