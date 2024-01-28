@@ -64,7 +64,7 @@ const Contact = () => {
                 />
               </div>
               <div className="w-[200px] mb-4 font-medium cursor-pointer p-4 text-white text-center font-montserrat mx-auto  btnGradient rounded-md">
-                Submit
+                Submittance
               </div>
             </div>
           </div>
