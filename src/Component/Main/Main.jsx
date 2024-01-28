@@ -5,6 +5,7 @@ import Criteria from "../../assets/Images/criteria.png";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { faqData } from "../../assets/Data/data";
 import Faq from "../../assets/Images/FAQ.png"
+import Reveal from "../Reveal/Reveal";
 const Main = () => {
   const [answer, setAnswer] = useState({});
 
@@ -16,7 +17,9 @@ const Main = () => {
   };
   return (
     <>
+    
       <div className="m-0 p-0 bg-colorBg">
+        <Reveal>
         <div className="w-5/6 mx-auto flex flex-col md:flex-row justify-center items-center">
           <div className=" w-sm md:basis-2/4">
             <div className=" relative w-5/6 mx-auto my-8">
@@ -45,8 +48,10 @@ const Main = () => {
             </div>
           </div>
         </div>
+        </Reveal>
       </div>
       <div className="m-0 p-0 bg-colorBg">
+        <Reveal>
         <div className="w-5/6 mx-auto flex flex-col-reverse md:flex-row justify-center items-center">
           <div className="w-sm md:basis-2/4 my-12">
             <h3 className="font-montserrat text-3xl text-center md:text-start font-semibold text-white pb-4">
@@ -69,8 +74,10 @@ const Main = () => {
             </div>
           </div>
         </div>
+        </Reveal>
       </div>
       <div className="p-0 m-0 bg-colorBg">
+        <Reveal>
         <div className="w-5/6 mx-auto flex flex-col md:flex-row justify-center items-center">
           <div className="w-sm md:basis-2/4">
             <div className="w-5/6 mx-auto mt-4 md:my-4">
@@ -131,11 +138,13 @@ const Main = () => {
             </div>
           </div>
         </div>
+        </Reveal>
       </div>
 
       {/* FAQ Sections */}
 
       <div id="faqs" className="p-0 m-0 bg-colorBg">
+        <Reveal>
         <div className="w-5/6 mx-auto flex flex-col md:flex-row gap-4 justify-center items-center">
           <div className="w-sm md:basis-2/4 mb-6">
             <h2 className="font-montserrat text-3xl text-center md:text-start font-bold text-white pb-2">
@@ -178,7 +187,9 @@ const Main = () => {
             <img src={Faq} alt="" className="w-full" />
           </div>
         </div>
+        </Reveal>
       </div>
+      
     </>
   );
 };

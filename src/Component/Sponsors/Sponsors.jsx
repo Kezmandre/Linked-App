@@ -5,10 +5,13 @@ import Winwise from "../../assets/Images/Winwise.png";
 import Wisper from "../../assets/Images/wisper.png";
 import Vuzual from "../../assets/Images/Vuzual.png";
 import Paybox from "../../assets/Images/Paybox.png";
+import Reveal from "../Reveal/Reveal";
 
 const Sponsors = () => {
   return (
+   
     <div className="m-0 pb-14 bg-colorBg">
+       <Reveal>
       <div className="w-5/6 mx-auto">
         <div className="w-sm md:w-[550px] mx-auto">
           <h2 className="font-montserrat text-center text-2xl py-8 text-white font-semibold">
@@ -43,7 +46,9 @@ const Sponsors = () => {
           </div>
         </div>
       </div>
+      </Reveal>
     </div>
+    
   );
 };
 

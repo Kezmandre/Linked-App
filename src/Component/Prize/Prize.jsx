@@ -3,10 +3,13 @@ import Trophy from "../../assets/Images/prize.png";
 import Silver from "../../assets/Images/silver.png"
 import Gold from "../../assets/Images/gold.png"
 import Bronze from "../../assets/Images/bronze.png"
+import Reveal from "../Reveal/Reveal";
 
 const Prize = () => {
   return (
+    
     <div className="m-0 py-14 bg-colorBg">
+      <Reveal>
       <div className="w-5/6 mx-auto">
         <div className="flex  justify-center md:justify-right  md-0 md:-ml-20 pt-14 pb-12 flex-col items-center">
           <h2 className="font-montserrat text-2xl font-semibold text-white pb-10 ">
@@ -75,7 +78,9 @@ const Prize = () => {
           </div>
         </div>
       </div>
+      </Reveal>
     </div>
+ 
   );
 };
 

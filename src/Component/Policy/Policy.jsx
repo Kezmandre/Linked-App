@@ -2,9 +2,12 @@ import React from "react";
 import List from "../../assets/Images/list.png";
 import Lock from "../../assets/Images/lock.png";
 import Toplock from "../../assets/Images/Toplock.png"
+import Reveal from "../Reveal/Reveal";
 const Policy = () => {
   return (
+    
     <div className="m-0 pt-12 pb-16 bg-colorBg">
+      <Reveal>
       <div className="w-5/6 mx-auto">
         <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-4 items-center">
           <div className="w-sm md:basis-2/4">
@@ -64,7 +67,9 @@ const Policy = () => {
           </div>
         </div>
       </div>
+      </Reveal>
     </div>
+   
   );
 };
 
