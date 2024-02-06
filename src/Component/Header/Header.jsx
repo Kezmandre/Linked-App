@@ -24,9 +24,9 @@ const Header = () => {
                   className="text-montserrat cursor-pointer text-xl hover:text-2xl"
                   key={item.id}
                 >
-                  <a href={item.path}>
+                  <Link to={item.path}>
                   <li className="hover:hover">{item.title}</li>
-                  </a>
+                  </Link>
                    
                  
                 </ul>
@@ -61,9 +61,9 @@ const Header = () => {
                   className="font-montserrat p-4 cursor-pointer text-xl hover:text-2xl"
                   key={item.id}
                 >
-                  <a href={item.path}>
+                  <Link to={item.path}>
                     <li>{item.title}</li>
-                  </a>
+                    </Link>
                 </ul>
               );
             })}

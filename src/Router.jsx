@@ -19,9 +19,9 @@ const Router = () => {
             </Layout>
           }
         />
-        <Route path="/faq" Component={Faq}/>
-        <Route path="/timeline" Component={Timeline}/>
 
+        <Route path="/faq" element={<Layout><Faq/></Layout>} />
+        <Route path="/timeline" element={ <Layout><Timeline/></Layout>} />
         <Route path="/contact" element={<ContactPage />} />
 
         <Route path="/register" element={<RegisterPage />} />

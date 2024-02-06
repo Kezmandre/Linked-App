@@ -1,10 +1,12 @@
 import React from "react";
 import Reveal from "../Reveal/Reveal";
+import Header from "../Header/Header";
 
 const Timeline = () => {
   return (
-    
-      <div id="timeline" className=" p-0 m-0 bg-colorBg">
+    <>
+    {/* <Header/> */}
+      <div className=" p-0 m-0 bg-colorBg">
         <Reveal>
         <div className="w-5/6 mx-auto">
           <h2 className="font-montserrat font-semibold text-2xl text-white text-center pt-12 pb-4">
@@ -292,7 +294,7 @@ const Timeline = () => {
         </div>
         </Reveal>
       </div>
-    
+    </>
   );
 };
 
