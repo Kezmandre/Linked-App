@@ -4,6 +4,8 @@ import HomePage from "./Pages/HomePage";
 import Layout from "./Component/Layout/Layout";
 import ContactPage from "./Pages/ContactPage";
 import RegisterPage from "./Pages/RegisterPage";
+import Faq from "./Component/Faq/Faq";
+import Timeline from "./Component/Timeline/Timeline";
 
 const Router = () => {
   return (
@@ -17,6 +19,8 @@ const Router = () => {
             </Layout>
           }
         />
+        <Route path="/faq" Component={Faq}/>
+        <Route path="/timeline" Component={Timeline}/>
 
         <Route path="/contact" element={<ContactPage />} />
 

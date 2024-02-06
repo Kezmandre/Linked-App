@@ -1,7 +1,7 @@
 export const navData = [
     {
     title: "Timeline",
-    path: "#timeline",
+    path: "/timeline",
     name:"nav-text",
 },
 
@@ -12,7 +12,7 @@ export const navData = [
 },
 {
     title: "FAQs",
-    path: "#faqs",
+    path: "/faq",
     name:"nav-text",
 },
 {
