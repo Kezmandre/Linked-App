@@ -4,7 +4,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 const Contact = () => {
   return (
-    <div className="m-0 p-0 bg-colorBg ">
+    <div className="m-0 p-0 bg-colorBg h-screen ">
       <div className="w-5/6 mx-auto">
         <div className="w-full flex items-center gap-8 pt-4 pb-4 md:pt-20 justify-center">
           <div className=" hidden md:flex w-[400px]">
